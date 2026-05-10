@@ -7,8 +7,6 @@
 #include <string>
 #include <chrono>
 #include <sstream>
-#include <iostream>
-#include <cassert>
 
 const std::string FORMATS[] = {"%F %T", "%F %H:%M:%S", "%F %R"};
 
@@ -19,7 +17,6 @@ int datetime_to_epoch(const std::string& datetime) {
     if (datetime.size() > 19)       ss >> std::chrono::parse(FORMATS[0], tp);
     else if (datetime.size() == 19) ss >> std::chrono::parse(FORMATS[1], tp);
     else if (datetime.size() == 16) ss >> std::chrono::parse(FORMATS[2], tp);
-    else assert(false);
     
     return std::chrono::floor<std::chrono::seconds>(tp).time_since_epoch().count();
 }
