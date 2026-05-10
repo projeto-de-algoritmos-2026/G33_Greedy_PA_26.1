@@ -22,8 +22,6 @@ const std::string MONTHS[] = {
     "Dezembro",
 };
 
-std::vector<std::string> downloads;
-
 std::string get_file_name(int month, int year) {
     std::string file_name = "VRA_" + std::to_string(year) + std::to_string(month) + ".csv";
     return file_name;
@@ -35,7 +33,6 @@ int csv_download(int month, int year) {
     std::string url = ANAC_URL + std::to_string(year) + "/" + padded_month + "%20-%20" + MONTHS[month] + "/" + file_name;
     std::string command = "curl -f -O \"" + url + "\"";
     int status = std::system(command.c_str());
-    downloads.emplace_back(file_name);
     return status;
 }
 
