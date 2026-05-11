@@ -24,6 +24,13 @@ colocar link:
 
 ## Screenshots
 
+![Preenchendo dados](Imagens/passo1.png)
+
+Recuperando informações de voos da ANAC do aeroporto de Brasília:
+
+![Recuperando informacoes](Imagens/passo2.png)
+
+
 ## Instalação 
 *Linguagem*: C++<br>
 
@@ -35,10 +42,15 @@ colocar link:
 
 ### Pre-requisitos
 - Ter o C++20 instalado.
+- Editor de texto
 
 ## Uso
 Rode no terminal: 
 ```sh 
-    g++ -O2 -std=c++20 main.cpp csv_download.cpp csv_parser.cpp -o airport
+    $g++ -O2 -std=c++20 main.cpp csv_download.cpp csv_parser.cpp -o airport
     $./airport
 ```
+ - Escolha uma data válida(mês e ano)
+ - Abra o arquivo .txt 
+
+ ![relatorio](Imagens/passo3.png)
