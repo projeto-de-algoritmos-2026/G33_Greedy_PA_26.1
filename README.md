@@ -39,6 +39,6 @@ colocar link:
 ## Uso
 Rode no terminal: 
 ```sh 
-    g++ -O2 -std=c++20 -Idbg solve_airport.cpp -o airport
+    g++ -O2 -std=c++20 main.cpp csv_download.cpp csv_parser.cpp -o airport
     $./airport
 ```
