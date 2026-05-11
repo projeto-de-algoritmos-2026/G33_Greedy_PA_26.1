@@ -1,4 +1,5 @@
 # G33_Greedy_PA_26.1
+
 Trabalho de Projeto de Algoritmos do semestre 26.1 sobre Gananciosos.
 
 # Alocador de rotas aéreas
@@ -6,15 +7,26 @@ Trabalho de Projeto de Algoritmos do semestre 26.1 sobre Gananciosos.
 *Conteúdo da Disciplina*: Greedy (Gananciosos) <br>
 
 ## Alunos
+
 |Matrícula | Aluno |
 | -- | -- |
 | 23/2014404  |  [Carlos Henrique Brasil de Souza](https://github.com/Carlos-UCH) |
 | 23/2014576  |  [Yogi Nam de Souza Barbosa](https://github.com/oyogi)
 
 ## Sobre
+
 Projeto desenvolvido por alunos da Universidade de Brasília (UnB) para a disciplina de Projeto de Algoritmos. 
 
 O projeto consiste em com dados de voos da ANAC do aeroporto de Brasília determinar a quantidade mínima de rotas aéreas que devem operar simultaneamente, garantindo a execução de todos os voos em uma data específica. 
+
+Para isso, no algoritmo baixamos a base de dados da ANAC que disponibiliza o histórico de voos na página de dados abertos. Com os horários de partida e chegada de cada voo utilizamos o algoritmo Interval Partitioning para determinar a menor quantidade de rotas que seriam necessárias.
+
+<div align="center">
+ <figure>
+  <img width="1215" height="543" alt="image" src="https://github.com/user-attachments/assets/ac78024a-16ff-4f95-8ef5-c802f7a03eb3" />
+  <figcaption>Figura 1: Exemplo de Interval Partitioning. Fonte: <a href="https://www.youtube.com/watch?v=i_G8hZYcKnI">MisterCode Youtube</a></figcaption>
+ </figure>
+</div>
 
 ### Rotas Aéras?
 
@@ -23,7 +35,7 @@ Rota aérea ou aeronáutica é uma rota em que passam aviões, semelhante a uma 
 <div align="center">
  <figure>
    <img width="1520" height="786" alt="Um avião passando numa rota aérea" src="https://github.com/user-attachments/assets/3683cf7b-1c5d-4d56-91c5-eb77ee1e959c" />
-   <figcaption >Figura 1: Um avião passando numa rota aérea. Fonte: DECEA.</figcaption>  
+   <figcaption >Figura 2: Um avião passando numa rota aérea. Fonte: DECEA.</figcaption>  
  </figure>
 </div>
 
@@ -32,7 +44,7 @@ Rota aeronáutica é também denominada "Rota de Navegação Aérea", que são f
 <div align="center">
  <figure>
    <img width="1610" height="1128" alt="Rotas aéreas do Brasil" src="https://github.com/user-attachments/assets/fff6b44a-cb32-49ab-bfe3-6ba0283b4d1b" />
-   <figcaption>Figura 2: Rotas aéreas do Brasil. Fonte: DECEA.</figcaption>
+   <figcaption>Figura 3: Rotas aéreas do Brasil. Fonte: DECEA.</figcaption>
  </figure>
 </div>
 
@@ -53,19 +65,23 @@ No nosso algoritmo simplificamos para apenas um avião pode voar simultaneamente
 colocar link:
 
 ## Instalação 
+
 *Linguagem*: C++<br>
 
 ## Clone o repositório  
+
  ```sh 
 git git@github.com:projeto-de-algoritmos-2026/G33_Greedy_PA_26.1.git
 cd G33_Greedy_PA_26.1
  ```
 
 ### Pre-requisitos
+
 - Ter o C++20 instalado.
 - Editor de texto
 
 ## Uso
+
 Rode no terminal: 
 ```sh 
 g++ -O2 -std=c++20 main.cpp csv_download.cpp csv_parser.cpp -o airport
