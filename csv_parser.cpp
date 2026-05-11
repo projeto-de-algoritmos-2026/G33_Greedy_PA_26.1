@@ -30,6 +30,8 @@ std::vector<std::pair<int, int>> csv_parser(int month, int year) {
     std::string cur, l, r, l_real, r_real;
     
     while (std::getline(file, line)) {
+        if (line.find("SBBR") == std::string::npos) continue;
+        
         int cnt = 0;
         
         for (char c : line) {

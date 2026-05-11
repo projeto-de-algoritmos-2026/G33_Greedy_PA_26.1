@@ -15,7 +15,7 @@ Trabalho de Projeto de Algoritmos do semestre 26.1 sobre Gananciosos.
 ## Sobre
 Projeto desenvolvido por alunos da Universidade de Brasília(UnB) para a disciplina de Projeto de Algoritmos. 
 
-O projeto consiste em com dados de voos da ANAC do aeroporto de Brasília determinar a quantidade mínima de portões de embarque que dever operar simultaneamente, garantindo o atendimento de todos os voos em uma data específica. 
+O projeto consiste em com dados de voos da ANAC do aeroporto de Brasília determinar a quantidade mínima de rotas aéreas que devem operar simultaneamente, garantindo a execução de todos os voos em uma data específica. 
 
 ## Link do Vídeo da Apresentação
 
