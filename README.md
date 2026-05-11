@@ -36,8 +36,8 @@ Recuperando informações de voos da ANAC do aeroporto de Brasília:
 
 ## Clone o repositório  
  ```sh 
-    git git@github.com:projeto-de-algoritmos-2026/G33_Greedy_PA_26.1.git
-    cd G33_Greedy_PA_26.1
+    $git git@github.com:projeto-de-algoritmos-2026/G33_Greedy_PA_26.1.git
+    $cd G33_Greedy_PA_26.1
  ```
 
 ### Pre-requisitos
