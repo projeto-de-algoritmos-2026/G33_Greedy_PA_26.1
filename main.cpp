@@ -71,7 +71,7 @@ int interval_partitioning(std::vector<std::pair<int, int>>& events, int month, i
 
 
    if(out.is_open()){
-       out << "Relatorio de alocação de portões - Aeroporto de Brasília - " << month << "/" << year << "\n";
+       out << "Relatório de alocação de portões - Aeroporto de Brasília - " << month << "/" << year << "\n";
        out << "Total de portões necessários: " << next_gate-1 << "\n";
        out << "\n";
        out << std::left << std::setw(15) << "Portão"
