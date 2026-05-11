@@ -11,6 +11,8 @@
 #include<queue>
 #include<fstream>
 #include<iomanip>
+#include <ctime>
+#include <sstream>
 
 
 void sleep(int seconds) {
@@ -21,6 +23,16 @@ void sleep(int seconds) {
 struct VooAlocado{
    int chegada, partida, gate;
 };
+
+
+std::string converter(int tmp){
+    std::time_t tempo = tmp; 
+    std::tm* tm_info = std::gmtime(&tempo); 
+    std::stringstream ss; 
+    ss << std::put_time(tm_info, "%d/%m/%Y %H:%M:%S");
+    return ss.str(); 
+}
+
 
 
 int interval_partitioning(std::vector<std::pair<int, int>>& events, int month, int year) {
@@ -63,12 +75,14 @@ int interval_partitioning(std::vector<std::pair<int, int>>& events, int month, i
        out << "Total de portões necessários: " << next_gate-1 << "\n";
        out << "\n";
        out << std::left << std::setw(15) << "Portão"
-       << std::left << std::setw(20) << "Chegada"
-       << std::left << std::setw(15) << "Partida" << "\n";
+       << std::left << std::setw(22) << "Chegada"
+       << std::left << std::setw(22) << "Partida" << "\n";
 
 
        for(const auto&voo: ans){
-           out << "Portão " << std::left << std::setw(8) << voo.gate << std::setw(20) << voo.chegada <<voo.partida << "\n";
+           out << "Portão " << std::left << std::setw(8) << voo.gate 
+           << std::left << std::setw(22) << converter(voo.chegada) 
+           << converter(voo.partida) << "\n";
        }
        out.close();
        std::cout << "\033[36m-> Relatorio detalhado gerado em: " << arquivo<< "\033[m" << std::endl;
