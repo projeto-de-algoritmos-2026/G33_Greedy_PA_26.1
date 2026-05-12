@@ -58,8 +58,8 @@ int interval_partitioning(std::vector<std::pair<int, int>>& events, int month, i
        out << "Total de rotas necessárias: " << next_route-1 << "\n";
        out << "\n";
        out << std::left << std::setw(13) << "Rota"
-       << std::left << std::setw(22) << "Chegada"
-       << std::left << std::setw(22) << "Partida" << "\n";
+       << std::left << std::setw(22) << "Partida"
+       << std::left << std::setw(22) <<"Chegada" << "\n";
 
        for(const auto&voo: ans){
            out << "Rota " << std::left << std::setw(8) << voo.route 
